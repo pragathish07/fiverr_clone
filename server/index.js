@@ -31,6 +31,11 @@ app.use(
   })
 );
 
+ 
+app.get("/ping", (req, res) => {
+  res.send("pong");
+});
+
 app.use("/uploads", express.static("uploads"));
 app.use("/uploads/profiles", express.static("uploads/profiles"));
 
