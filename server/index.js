@@ -12,7 +12,7 @@ dotenv.config();
 
 const app = express();
 const port = process.env.PORT;
-const allowedOrigins = [process.env.ORIGIN, 'http://localhost:3000'];
+const allowedOrigins = [process.env.ORIGIN, 'http://localhost:3000','https://fiverr-clone-snowy.vercel.app/'];
 
 app.use(
   cors({
